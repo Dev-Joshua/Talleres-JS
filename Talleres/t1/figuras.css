@@ -150,6 +150,19 @@ article {
   text-align: center;
   background-color: transparent;
 }
+.result {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: bold;
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
 
 @media(max-width: 750px) {
   .section-primary {

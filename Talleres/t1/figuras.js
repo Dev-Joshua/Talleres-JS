@@ -104,14 +104,20 @@ function hallarAltura (lado1, lado2, base) {
 console.groupEnd();
 
 
-//Desde aqui interactuamos con el HTML
+
+const spanResultCuadrado = document.getElementById('resultadoCuadrado');
+const spanResultTriangulo = document.getElementById('resultadoTriangulo')
+const spanResultCirculo = document.getElementById('resultadoCirculo')
+const spanResultTriIso = document.getElementById('resultadoTriIso')
+//Desde aqui interactuamos con el HTML -----------------------------------------------------------------------------------------
 //CUADRADO
 function calcularPerimetroCuadrado() {
   const input = document.getElementById("InputCuadrado")
   const value = input.value;
 
   const perimetro = perimetroCuadrado(value);
-  alert(perimetro);
+  // alert(perimetro);
+  spanResultCuadrado.innerText = `El perimetro de su cuadrado es de ${perimetro}cm`
 }
 
 function calcularAreaCuadrado () {
@@ -119,7 +125,8 @@ function calcularAreaCuadrado () {
   const value = input.value;
 
   const area = areaCuadrado(value);
-  alert(area);
+  // alert(area);
+  spanResultCuadrado.innerText = `El area de su cuadrado es de ${area}cm^2`
 }
 
 //TRIANGULO
@@ -129,7 +136,8 @@ function calcularPerimetroTriangulo() {
   const base = parseInt(document.getElementById("InputTrianguloBase").value);
 
   const perimetro = perimetroTriangulo(lado1, lado2, base);
-  alert(perimetro);
+  // alert(perimetro);
+  spanResultTriangulo.innerText = `El perimetro de su triangulo es de ${perimetro}cm`
 }
 
 function calcularAreaTriangulo () {
@@ -137,7 +145,8 @@ function calcularAreaTriangulo () {
   const altura = parseInt(document.getElementById("InputTrianguloAltura").value);
 
   const area = areaTriangulo(base, altura);
-  alert(area);
+  // alert(area);
+  spanResultTriangulo.innerText = `El area de su triangulo es de ${area}cm^2`
 }
 
 
@@ -147,7 +156,8 @@ function calcularDiametroCirculo() {
   const value = input.value;
 
   const diametro = diametroCirculo(value);
-  alert(diametro);
+  // alert(diametro);
+  spanResultCirculo.innerText = `El diametro de su circulo es de ${diametro}cm^2`
 }
 
 function calcularPerimetroCirculo() {
@@ -155,7 +165,8 @@ function calcularPerimetroCirculo() {
   const value = input.value;
 
   const perimetro = perimetroCirculo(value);
-  alert(perimetro);
+  // alert(perimetro);
+  spanResultCirculo.innerText = `El perimetro de su circulo es de ${perimetro}cm^2`
 }
 
 function calcularAreaCirculo () {
@@ -163,7 +174,8 @@ function calcularAreaCirculo () {
   const value = input.value;
 
   const area = areaCirculo(value);
-  alert(area);
+  // alert(area);
+  spanResultCirculo.innerText = `El area de su circulo es de ${area}cm^2`
 }
 
 //TRIANGULO ISOSCELES
@@ -173,5 +185,6 @@ function calcularAlturaIsosceles () {
   const ladoBase = parseInt(document.getElementById("InputBase").value);
 
   const altura = hallarAltura(lado1, lado2, ladoBase);
-  alert(altura);
+  // alert(altura);
+  spanResultTriIso.innerText = `La altura de su triangulo isosceles es de ${altura}cm`
 }

@@ -48,6 +48,9 @@ body{
   gap: 6px;
   font-weight: bold;
 }
+.header-nav-links a:hover {
+  border-bottom: 2px solid var(--main);
+}
 .home img {
   width: 28px;
   height: 28px;
@@ -109,9 +112,12 @@ article {
 .main-form button {
   width: 300px;
   background-color: var(--black-1);
-  height: 30px;
+  height: 36px;
   letter-spacing: 3px;
   color: var(--text);
+}
+.main-form button:hover {
+  background-color: var(--black);
 }
 .main-form label {
   width: 350px;
