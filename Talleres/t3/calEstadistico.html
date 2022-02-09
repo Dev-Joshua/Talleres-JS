@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./calEstadistico.css">
+  <title>Salarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-section">
+    <nav class="header-nav">
+      <div class="header-nav-links">
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/553/553335.png" alt="Home">    
+          HOME
+        </a>
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+          GITHUB
+        </a>
+      </div>
+    </nav>
+    <div class="section-info">
+      <h1>PROMEDIO, MODA Y MEDIANA</h1>
+      <p>Taller #3</p>
+    </div>
+  </header>
+
+  <section class="section-primary">
+    <h2>CALCULAR ESTADISTICAMENTE</h2>
+    <article>
+      <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/6804/6804631.png" alt="barras">
+      <form class="main-form">
+        <label for="InputValue">Ingrese los valores separados por comas (,)</label>
+        <div class="container">
+          <input class="input" type="text" id="InputValue" placeholder="Example: 8,23,14,10">
+          <button type="button" id="clear">Clear</button>
+        </div>
+        <label for="InputValue">Seleccione la operación</label>
+        <div class="select">
+          <div data-option="promedio" id="promedio" class="options">PROMEDIO</div>
+          <div data-option="mediana" id="mediana" class="options">MEDIANA</div>
+          <div data-option="moda" id="moda" class="options">MODA</div>
+        </div>
+        <button type="button" id="calcular">
+          Calcular
+        </button>
+      </form>
+      <span class="result" id="resultado"></span>
+    </article>
+  </section>
+
+  <script src="./calEstadistico.js"></script>
+</body>
+</html>

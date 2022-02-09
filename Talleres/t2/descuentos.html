@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./descuentos.css">
+  <title>Porcentajes y descuentos</title>
+</head>
+<body>
+  <header class="header-section">
+    <nav class="header-nav">
+      <div class="header-nav-links">
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/553/553335.png" alt="Home">    
+          HOME
+        </a>
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+          GITHUB
+        </a>
+      </div>
+    </nav>
+    <div class="section-info">
+      <h1>PORCENTAJES Y DESCUENTOS</h1>
+      <p>Taller de porcentajes y descuentos de JS.</p>
+    </div>
+  </header>
+
+  <section class="section-primary">
+    <article>
+      <img class="imagen-figure" src="https://cdn-icons.flaticon.com/png/512/792/premium/792030.png?token=exp=1644328801~hmac=c070786f415999eff17f4c63b809f811" alt="descuento-sale">
+      <h2>Calcula el precio a pagar de tus productos con descuento:</h2>
+      <form class="main-form">
+        <label for="InputPrice">Escribe el precio de tu producto</label>
+        <input id="InputPrice" type="number">
+  
+        <label for="InputDiscount">Escribe el descuento del producto</label>
+        <input id="InputDiscount" type="number">
+  
+        <button type="button" onclick="onClickButtonPrice()">
+          Calcular precio
+        </button>
+  
+        <p id="ResultPrice1"></p>
+      </form>
+    </article>
+  
+    <article>
+      <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/1831/1831655.png">
+      <h2>Calcula el precio a pagar redimiendo tus cupones:</h2>
+      <form class="main-form">
+        <label for="InputPrice2">Escribe el precio de tu producto</label>
+        <input id="InputPrice2" type="number">
+  
+        <label for="InputCoupon">Escribe aqui tu cupon de descuento</label>
+        <input id="InputCoupon" type="text">
+  
+        <button type="button" onclick="onClickButtonPriceCoupon()">
+          Calcular precio
+        </button>
+  
+        <p id="ResultPrice2"></p>
+      </form>
+    </article>
+    <div>
+      <ul>CUPONES
+        <li>Yo soy batman - 15%</li>
+        <li>es un secreto - 25%</li>
+        <li>te vigilo - 35%</li>
+      </ul>
+    </div>
+  </section>
+  <script src="./descuentos.js"></script>
+</body>
+</html>

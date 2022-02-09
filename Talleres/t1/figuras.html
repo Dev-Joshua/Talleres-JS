@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./figuras.css">
+  <title>Figuras geométricas</title>
+</head>
+<body>
+  <header class="header-section">
+    <nav class="header-nav">
+      <div class="header-nav-links">
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/553/553335.png" alt="Home">    
+          HOME
+        </a>
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+          GITHUB
+        </a>
+      </div>
+    </nav>
+    <section class="section-info">
+      <h1>
+        Figuras Geométricas
+      </h1>
+      <p>Hi, I'm MathBot and i'll help you with math.</p>
+    </section>
+  </header>
+
+<section class="section-primary">
+  <article>
+    <h2>CUADRADO</h2>
+    <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/2627/2627937.png" alt="cuadrado">
+    <form class="main-form">
+      <label for="InputCuadrado">
+        Escribe cuánto mide cada lado de tu cuadrado en cm.
+      </label>
+      <input class="inputCuadrado" id="InputCuadrado" type="number" placeholder="lados" />
+      <button type="button" onclick="calcularPerimetroCuadrado()">
+        CALCULAR PERIMETRO
+      </button>
+      <button type="button" onclick="calcularAreaCuadrado()">
+        CALCULAR AREA
+      </button>
+    </form>
+  </article>
+
+  <article>
+    <h2>TRIANGULO</h2>
+    <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/136/136833.png">
+    <form class="main-form">
+      <label>
+        Escribe cuánto mide cada uno de los lados de tu triangulo, su base y su altura en cm.
+      </label>
+      <div class="form-inputTriangulo">
+        <input class="inputTri" id="InputTrianguloLado1" type="number" placeholder="lado A" >
+        <input class="inputTri" id="InputTrianguloLado2" type="number" placeholder="lado B" >
+        <input class="inputTri" id="InputTrianguloBase" type="number" placeholder="base" >
+        <input class="inputTri" id="InputTrianguloAltura" type="number" placeholder="altura">
+      </div>
+      <button type="button" onclick="calcularPerimetroTriangulo()">
+        CALCULAR PERIMETRO
+      </button>
+      <button type="button" onclick="calcularAreaTriangulo()">
+        CALCULAR AREA
+      </button>
+    </form>
+  </article>
+
+  <article>
+    <h2>CIRCULO</h2>
+    <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/481/481078.png" alt="circulo">
+    <form class="main-form">
+      <label>
+        Escribe cuánto mide el radio de tu circulo en cm.
+      </label>
+      <input class="input-circulo" id="InputCirculo" type="number" placeholder="radio"/>
+      <button type="button" onclick="calcularDiametroCirculo()">
+        CALCULAR DIAMETRO
+      </button>
+      <button type="button" onclick="calcularPerimetroCirculo()">
+        CALCULAR PERIMETRO
+      </button>
+      <button type="button" onclick="calcularAreaCirculo()">
+        CALCULAR AREA
+      </button>
+    </form>
+  </article>
+
+  <article>
+    <h2>TRIÁNGULO ISÓSCELES</h2>
+    <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/6823/6823387.png" alt="triangulo">
+    <form class="main-form">
+      <label>Calcula la altura de un triángulo isósceles en centimetros.</label>
+      <input class="input-iso" type="number" placeholder="lado A" id="InputLadoA">
+      <input class="input-iso" type="number" placeholder="lado B" id="InputLadoB">
+      <input class="input-iso" type="number" placeholder="base" id="InputBase">
+      <button type="button" onclick="calcularAlturaIsosceles()">CALCULAR ALTURA</button>
+    </form>
+  </article>
+</section>
+  <script src="./figuras.js"></script>
+</body>
+</html>

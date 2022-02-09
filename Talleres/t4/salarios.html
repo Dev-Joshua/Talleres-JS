@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./salarios.css">
+  <title>Salarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header-section">
+    <nav class="header-nav">
+      <div class="header-nav-links">
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/553/553335.png" alt="Home">    
+          HOME
+        </a>
+        <a class="home" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+          GITHUB
+        </a>
+      </div>
+    </nav>
+    <div class="section-info">
+      <h1>ANALISIS SALARIAL</h1>
+      <p>Taller #4</p>
+    </div>
+  </header>
+
+  <section class="section-primary">
+    <h1>VERIFIQUE SU CAPACIDAD DE CRÉDITO</h1>
+    <article>
+      <img class="imagen-figure" src="https://cdn-icons-png.flaticon.com/512/2942/2942931.png" alt="salario">
+      <form class="main-form">
+        <label for="InputIngresos">¿Cuánto dinero recibe mensualmente?</label>
+        <input class="input" id="InputIngresos" type="number" placeholder="Indique sus ingresos en dolares ($)">
+  
+        <label for="InputGastos">¿Cual es el monto de sus gastos por mes?</label>
+        <input class="input" id="InputGastos" type="number" placeholder="Indique sus gastos en dolares ($)">
+  
+        <button type="button" id="calcular">
+          Calcular
+        </button>
+  
+        <p id="ResultPrice"></p>
+      </form>
+    </article>
+    <span class="result" id="resultado"></span>
+  </section>
+
+  <script src="./capSalarial.js"></script>
+  <!-- <script src="./salarios.js"></script> -->
+  <!-- <script src="./analisis.js"></script> -->
+</body>
+</html>
